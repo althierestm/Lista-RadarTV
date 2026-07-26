@@ -3,16 +3,11 @@
 
   <channel id="RadarTV">
     <display-name>Radar TV</display-name>
+    <display-name>RadarTV</display-name>
     <icon src="https://raw.githubusercontent.com/althierestm/radartv/main/Logo%20RadarTV%203000x3000.jpg" />
   </channel>
 
   <!-- PROGRAMA AO VIVO AGORA -->
-  <programme start="20260726120000 -0300" stop="20260726140000 -0300" channel="RadarTV">
-    <title lang="pt">Todo Mundo odeia o Chris</title>
-    <desc lang="pt">Maratona especial do seriado Todo Mundo Odeia o Chris no Radar TV.</desc>
-  </programme>
-
-  <!-- PRÓXIMO PROGRAMA -->
   <programme start="20260726140000 -0300" stop="20260726160000 -0300" channel="RadarTV">
     <title lang="pt">Althieres ama Juliana</title>
     <desc lang="pt">Especial da programação demonstrando que o amor está no ar.</desc>
