@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tv generator-info-name="Radar TV EPG">
+
+  <!-- 1. IDENTIFICAÇÃO DO CANAL -->
+  <channel id="RadarTV">
+    <display-name>Radar TV</display-name>
+    <icon src="https://raw.githubusercontent.com/althierestm/radartv/main/Logo%20RadarTV%203000x3000.jpg" />
+  </channel>
+
+  <!-- 2. PROGRAMAÇÃO (O formato de data é: ANO MES DIA HORA MINUTO SEGUNDO FUSO) -->
+  
+  <!-- Programa 1: Das 06:00 às 12:00 -->
+  <programme start="20260726060000 -0300" stop="20260726120000 -0300" channel="RadarTV">
+    <title lang="pt">Manhã Radar TV</title>
+    <desc lang="pt">Programação matinal com notícias regionais e entretenimento.</desc>
+  </programme>
+
+  <!-- Programa 2: Das 12:00 às 18:00 -->
+  <programme start="20260726120000 -0300" stop="20260726180000 -0300" channel="RadarTV">
+    <title lang="pt">Radar Esportes e Notícias</title>
+    <desc lang="pt">Cobertura completa do esporte amador e notícias da região.</desc>
+  </programme>
+
+  <!-- Programa 3: Das 18:00 às 23:59 -->
+  <programme start="20260726180000 -0300" stop="20260726235959 -0300" channel="RadarTV">
+    <title lang="pt">Noite de Entretenimento</title>
+    <desc lang="pt">Shows, entrevistas e transmissões ao vivo.</desc>
+  </programme>
+
+</tv>
