@@ -1,3 +1,3 @@
-#EXTM3U
+#EXTM3U x-tvg-url="https://raw.githubusercontent.com/althierestm/radartv/main/epg.xml"
 #EXTINF:-1 tvg-id="RadarTV" tvg-name="Radar TV" tvg-logo="https://raw.githubusercontent.com/althierestm/radartv/main/Logo%20RadarTV%203000x3000.jpg" group-title="Radar TV", Radar TV
 https://video01.logicahost.com.br/fcvtv/fcvtv/playlist.m3u8
