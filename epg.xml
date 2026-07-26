@@ -7,22 +7,420 @@
     <icon src="https://raw.githubusercontent.com/althierestm/radartv/main/Logo%20RadarTV%203000x3000.jpg" />
   </channel>
 
-  <!-- PROGRAMA ANTERIOR -->
+  <!-- ================= DOMINGO (26/07/2026) ================= -->
+  <programme start="20260726000000 -0300" stop="20260726020000 -0300" channel="RadarTV">
+    <title lang="pt">Corujão de Domingo</title>
+    <desc lang="pt">Seleção musical para embalar a sua madrugada de domingo.</desc>
+  </programme>
+  <programme start="20260726020000 -0300" stop="20260726040000 -0300" channel="RadarTV">
+    <title lang="pt">Madrugada Sertaneja</title>
+    <desc lang="pt">O melhor do sertanejo de raiz e modões inesquecíveis.</desc>
+  </programme>
+  <programme start="20260726040000 -0300" stop="20260726060000 -0300" channel="RadarTV">
+    <title lang="pt">Amanhecer Caipira</title>
+    <desc lang="pt">Acompanhando o despertar do homem do campo na região.</desc>
+  </programme>
+  <programme start="20260726060000 -0300" stop="20260726080000 -0300" channel="RadarTV">
+    <title lang="pt">Domingo no Campo</title>
+    <desc lang="pt">Notícias, agropecuária e informações do setor rural.</desc>
+  </programme>
+  <programme start="20260726080000 -0300" stop="20260726100000 -0300" channel="RadarTV">
+    <title lang="pt">Santa Missa &amp; Mensagem</title>
+    <desc lang="pt">Momento de fé, reflexão e oração para a sua manhã.</desc>
+  </programme>
+  <programme start="20260726100000 -0300" stop="20260726120000 -0300" channel="RadarTV">
+    <title lang="pt">Domingo em Família</title>
+    <desc lang="pt">Entretenimento leve, cultura e quadros especiais.</desc>
+  </programme>
   <programme start="20260726120000 -0300" stop="20260726140000 -0300" channel="RadarTV">
-    <title lang="pt">Todo Mundo odeia o Chris</title>
-    <desc lang="pt">Maratona especial do seriado Todo Mundo Odeia o Chris no Radar TV.</desc>
+    <title lang="pt">Churrasco &amp; Viola</title>
+    <desc lang="pt">O almoço de domingo com muita música boa e moda de viola.</desc>
   </programme>
-
-  <!-- PROGRAMA AO VIVO AGORA (14:00 às 16:00) -->
   <programme start="20260726140000 -0300" stop="20260726160000 -0300" channel="RadarTV">
-    <title lang="pt">Domingo muito show</title>
-    <desc lang="pt">O melhor do entretenimento, música e atrações especiais para o seu domingo no Radar TV.</desc>
+    <title lang="pt">Domingo Muito Show</title>
+    <desc lang="pt">Atrações especiais, reportagens e variedades.</desc>
+  </programme>
+  <programme start="20260726160000 -0300" stop="20260726180000 -0300" channel="RadarTV">
+    <title lang="pt">Ruralzão 2026 Godinho x Cabral Ao vivo</title>
+    <desc lang="pt">Transmissão ao vivo do grande confronto do campeonato Ruralzão 2026 entre Godinho e Cabral.</desc>
+  </programme>
+  <programme start="20260726180000 -0300" stop="20260726200000 -0300" channel="RadarTV">
+    <title lang="pt">Resenha do Ruralzão</title>
+    <desc lang="pt">Análise do jogo, melhores momentos e entrevistas pós-partida.</desc>
+  </programme>
+  <programme start="20260726200000 -0300" stop="20260726220000 -0300" channel="RadarTV">
+    <title lang="pt">Domingo de Gala</title>
+    <desc lang="pt">Especial de encerramento do fim de semana com grandes produções.</desc>
+  </programme>
+  <programme start="20260726220000 -0300" stop="20260727000000 -0300" channel="RadarTV">
+    <title lang="pt">Radar Night Domingo</title>
+    <desc lang="pt">Música e tranquilidade para fechar o seu domingo.</desc>
   </programme>
 
-  <!-- PROGRAMAÇÃO DA NOITE (16:00 às 23:59) -->
-  <programme start="20260726160000 -0300" stop="20260726235959 -0300" channel="RadarTV">
-    <title lang="pt">Noite de Entretenimento</title>
-    <desc lang="pt">Variedades, matérias da região e transmissões ao vivo.</desc>
+  <!-- ================= SEGUNDA-FEIRA (27/07/2026) ================= -->
+  <programme start="20260727000000 -0300" stop="20260727020000 -0300" channel="RadarTV">
+    <title lang="pt">Corujão Radar TV</title>
+    <desc lang="pt">Programação madrugadora com destaques regionais.</desc>
+  </programme>
+  <programme start="20260727020000 -0300" stop="20260727040000 -0300" channel="RadarTV">
+    <title lang="pt">Madrugada Musical</title>
+    <desc lang="pt">Os maiores sucessos nacionais e internacionais.</desc>
+  </programme>
+  <programme start="20260727040000 -0300" stop="20260727060000 -0300" channel="RadarTV">
+    <title lang="pt">Despertar Rural</title>
+    <desc lang="pt">Cotações, tempo e informações para o produtor.</desc>
+  </programme>
+  <programme start="20260727060000 -0300" stop="20260727080000 -0300" channel="RadarTV">
+    <title lang="pt">Segunda Notícias</title>
+    <desc lang="pt">Giro pelas principais notícias para começar a semana informado.</desc>
+  </programme>
+  <programme start="20260727080000 -0300" stop="20260727100000 -0300" channel="RadarTV">
+    <title lang="pt">Manhã de Segunda</title>
+
+    <desc lang="pt">Prestação de serviço, utilidade pública e entrevistas.</desc>
+  </programme>
+  <programme start="20260727100000 -0300" stop="20260727120000 -0300" channel="RadarTV">
+    <title lang="pt">Giro Regional</title>
+    <desc lang="pt">Tudo o que acontece em Muriaé e municípios vizinhos.</desc>
+  </programme>
+  <programme start="20260727120000 -0300" stop="20260727140000 -0300" channel="RadarTV">
+    <title lang="pt">Radar Esportes Segunda</title>
+    <desc lang="pt">Repercussão dos jogos do final de semana na região.</desc>
+  </programme>
+  <programme start="20260727140000 -0300" stop="20260727160000 -0300" channel="RadarTV">
+    <title lang="pt">Cine Segunda</title>
+    <desc lang="pt">Exibição de filmes e documentários especiais.</desc>
+  </programme>
+  <programme start="20260727160000 -0300" stop="20260727180000 -0300" channel="RadarTV">
+    <title lang="pt">Tarde de Segunda</title>
+    <desc lang="pt">Variedades, entretenimento e interatividade.</desc>
+  </programme>
+  <programme start="20260727180000 -0300" stop="20260727200000 -0300" channel="RadarTV">
+    <title lang="pt">Jornal da Cidade</title>
+    <desc lang="pt">O resumo do dia com credibilidade e agilidade.</desc>
+  </programme>
+  <programme start="20260727200000 -0300" stop="20260727220000 -0300" channel="RadarTV">
+    <title lang="pt">Segunda Prime</title>
+    <desc lang="pt">Entrevistas exclusivas e debates sobre temas da região.</desc>
+  </programme>
+  <programme start="20260727220000 -0300" stop="20260728000000 -0300" channel="RadarTV">
+    <title lang="pt">Radar Night Show</title>
+    <desc lang="pt">Shows e apresentações artísticas para fechar a noite.</desc>
+  </programme>
+
+  <!-- ================= TERÇA-FEIRA (28/07/2026) ================= -->
+  <programme start="20260728000000 -0300" stop="20260728020000 -0300" channel="RadarTV">
+    <title lang="pt">Corujão Radar</title>
+    <desc lang="pt">Variedades e músicas na madrugada.</desc>
+  </programme>
+  <programme start="20260728020000 -0300" stop="20260728040000 -0300" channel="RadarTV">
+    <title lang="pt">Sertanejo &amp; Tradição</title>
+    <desc lang="pt">Música raiz e causos do interior.</desc>
+  </programme>
+  <programme start="20260728040000 -0300" stop="20260728060000 -0300" channel="RadarTV">
+    <title lang="pt">Notícias do Campo</title>
+    <desc lang="pt">Informativo agrícola e previsão do tempo.</desc>
+  </programme>
+  <programme start="20260728060000 -0300" stop="20260728080000 -0300" channel="RadarTV">
+    <title lang="pt">Terça Informativa</title>
+    <desc lang="pt">Manhã de informação com destaques locais.</desc>
+  </programme>
+  <programme start="20260728080000 -0300" stop="20260728100000 -0300" channel="RadarTV">
+    <title lang="pt">Terça em Foco</title>
+    <desc lang="pt">Análises e entrevistas sobre economia e comunidade.</desc>
+  </programme>
+  <programme start="20260728100000 -0300" stop="20260728120000 -0300" channel="RadarTV">
+    <title lang="pt">Cozinha &amp; Sabor</title>
+    <desc lang="pt">Receitas regionais, gastronomia e dicas culinárias.</desc>
+  </programme>
+  <programme start="20260728120000 -0300" stop="20260728140000 -0300" channel="RadarTV">
+    <title lang="pt">Debate Esportivo</title>
+    <desc lang="pt">Mesa redonda sobre os campeonatos locais e estaduais.</desc>
+  </programme>
+  <programme start="20260728140000 -0300" stop="20260728160000 -0300" channel="RadarTV">
+    <title lang="pt">Sessão Retrô</title>
+    <desc lang="pt">Relembrando momentos marcantes da história da região.</desc>
+  </programme>
+  <programme start="20260728160000 -0300" stop="20260728180000 -0300" channel="RadarTV">
+    <title lang="pt">Terça de Prêmios</title>
+    <desc lang="pt">Sorteios, participação dos telespectadores e muita música.</desc>
+  </programme>
+  <programme start="20260728180000 -0300" stop="20260728200000 -0300" channel="RadarTV">
+    <title lang="pt">Jornal Regional</title>
+    <desc lang="pt">Os principais fatos do dia na região.</desc>
+  </programme>
+  <programme start="20260728200000 -0300" stop="20260728220000 -0300" channel="RadarTV">
+    <title lang="pt">Entrevista da Terça</title>
+    <desc lang="pt">Conversa com personalidades e lideranças locais.</desc>
+  </programme>
+  <programme start="20260728220000 -0300" stop="20260729000000 -0300" channel="RadarTV">
+    <title lang="pt">Som &amp; Imagem</title>
+    <desc lang="pt">Videoclipes e apresentações musicais exclusivas.</desc>
+  </programme>
+
+  <!-- ================= QUARTA-FEIRA (29/07/2026) ================= -->
+  <programme start="20260729000000 -0300" stop="20260729020000 -0300" channel="RadarTV">
+    <title lang="pt">Madrugada Especial</title>
+    <desc lang="pt">Seleção de grandes shows e festivais.</desc>
+  </programme>
+  <programme start="20260729020000 -0300" stop="20260729040000 -0300" channel="RadarTV">
+    <title lang="pt">Trilha Musical</title>
+    <desc lang="pt">Música para acompanhar quem trabalha na madrugada.</desc>
+  </programme>
+  <programme start="20260729040000 -0300" stop="20260729060000 -0300" channel="RadarTV">
+    <title lang="pt">Amanhecer no Campo</title>
+    <desc lang="pt">Notícias do agronegócio e vida rural.</desc>
+  </programme>
+  <programme start="20260729060000 -0300" stop="20260729080000 -0300" channel="RadarTV">
+    <title lang="pt">Quarta de Notícias</title>
+    <desc lang="pt">Primeiras informações do meio da semana.</desc>
+  </programme>
+  <programme start="20260729080000 -0300" stop="20260729100000 -0300" channel="RadarTV">
+    <title lang="pt">Bom Dia Cidade</title>
+    <desc lang="pt">Entrevistas, serviços públicos e utilidade pública.</desc>
+  </programme>
+  <programme start="20260729100000 -0300" stop="20260729120000 -0300" channel="RadarTV">
+    <title lang="pt">Quarta Show</title>
+    <desc lang="pt">Entretenimento, variedades e participações especiais.</desc>
+  </programme>
+  <programme start="20260729120000 -0300" stop="20260729140000 -0300" channel="RadarTV">
+    <title lang="pt">Radar Esportivo Quarta</title>
+    <desc lang="pt">Prévia dos jogos de quarta-feira à noite.</desc>
+  </programme>
+  <programme start="20260729140000 -0300" stop="20260729160000 -0300" channel="RadarTV">
+    <title lang="pt">Variedades da Tarde</title>
+    <desc lang="pt">Cultura, moda e comportamento.</desc>
+  </programme>
+  <programme start="20260729160000 -0300" stop="20260729180000 -0300" channel="RadarTV">
+    <title lang="pt">Quarta Cultural</title>
+
+    <desc lang="pt">Artistas locais, música e projetos regionais.</desc>
+  </programme>
+  <programme start="20260729180000 -0300" stop="20260729200000 -0300" channel="RadarTV">
+    <title lang="pt">Jornal da Cidade</title>
+    <desc lang="pt">As principais notícias do dia.</desc>
+  </programme>
+  <programme start="20260729200000 -0300" stop="20260729220000 -0300" channel="RadarTV">
+    <title lang="pt">Futebol de Quarta</title>
+    <desc lang="pt">Transmissão ou cobertura especial do esporte amador e regional.</desc>
+  </programme>
+  <programme start="20260729220000 -0300" stop="20260730000000 -0300" channel="RadarTV">
+    <title lang="pt">Resenha Esportiva</title>
+    <desc lang="pt">Giro pós-jogo com análises e comentários.</desc>
+  </programme>
+
+  <!-- ================= QUINTA-FEIRA (30/07/2026) ================= -->
+  <programme start="20260730000000 -0300" stop="20260730020000 -0300" channel="RadarTV">
+    <title lang="pt">Corujão Radar TV</title>
+    <desc lang="pt">Clipe musical e reprises dos melhores momentos.</desc>
+  </programme>
+  <programme start="20260730020000 -0300" stop="20260730040000 -0300" channel="RadarTV">
+    <title lang="pt">Seleção Musical</title>
+    <desc lang="pt">Músicas variadas na sua madrugada.</desc>
+  </programme>
+  <programme start="20260730040000 -0300" stop="20260730060000 -0300" channel="RadarTV">
+    <title lang="pt">Notícias da Manhã</title>
+    <desc lang="pt">Boletins do setor agropecuário.</desc>
+  </programme>
+  <programme start="20260730060000 -0300" stop="20260730080000 -0300" channel="RadarTV">
+    <title lang="pt">Quinta Informativa</title>
+    <desc lang="pt">Informação com dinamismo para o seu dia.</desc>
+  </programme>
+  <programme start="20260730080000 -0300" stop="20260730100000 -0300" channel="RadarTV">
+    <title lang="pt">Quinta Conectada</title>
+
+    <desc lang="pt">Tecnologia, inovação e prestação de serviço.</desc>
+  </programme>
+  <programme start="20260730100000 -0300" stop="20260730120000 -0300" channel="RadarTV">
+    <title lang="pt">Papo Aberto</title>
+    <desc lang="pt">Entrevistas e debate de temas comunitários.</desc>
+  </programme>
+  <programme start="20260730120000 -0300" stop="20260730140000 -0300" channel="RadarTV">
+    <title lang="pt">Giro dos Esportes</title>
+
+    <desc lang="pt">Notícias do esporte local e regional.</desc>
+  </programme>
+  <programme start="20260730140000 -0300" stop="20260730160000 -0300" channel="RadarTV">
+    <title lang="pt">Cinema em Casa</title>
+    <desc lang="pt">Sessão de filmes para a sua tarde.</desc>
+  </programme>
+  <programme start="20260730160000 -0300" stop="20260730180000 -0300" channel="RadarTV">
+    <title lang="pt">Quinta Sertaneja</title>
+
+    <desc lang="pt">O melhor do sertanejo universitário e modões.</desc>
+  </programme>
+  <programme start="20260730180000 -0300" stop="20260730200000 -0300" channel="RadarTV">
+    <title lang="pt">Radar Notícias</title>
+    <desc lang="pt">Informativo completo do final de tarde.</desc>
+  </programme>
+  <programme start="20260730200000 -0300" stop="20260730220000 -0300" channel="RadarTV">
+    <title lang="pt">TBT da Radar</title>
+
+    <desc lang="pt">Revisitando grandes transmissões e momentos históricos.</desc>
+  </programme>
+  <programme start="20260730220000 -0300" stop="20260731000000 -0300" channel="RadarTV">
+    <title lang="pt">Noite de Quinta</title>
+
+    <desc lang="pt">Entrenimento e programação especial pré-sexta.</desc>
+  </programme>
+
+  <!-- ================= SEXTA-FEIRA (31/07/2026) ================= -->
+  <programme start="20260731000000 -0300" stop="20260731020000 -0300" channel="RadarTV">
+    <title lang="pt">Madrugada VIP</title>
+    <desc lang="pt">Música para quem curte a madrugada de sexta.</desc>
+  </programme>
+  <programme start="20260731020000 -0300" stop="20260731040000 -0300" channel="RadarTV">
+    <title lang="pt">Clássicos da Música</title>
+    <desc lang="pt">Grandes sucessos de todas as épocas.</desc>
+  </programme>
+  <programme start="20260731040000 -0300" stop="20260731060000 -0300" channel="RadarTV">
+    <title lang="pt">Agro em Foco</title>
+    <desc lang="pt">Notícias rurais e cotações para o produtor.</desc>
+  </programme>
+  <programme start="20260731060000 -0300" stop="20260731080000 -0300" channel="RadarTV">
+    <title lang="pt">Sexta Notícias</title>
+    <desc lang="pt">Abertura do jornalismo para o fim de semana.</desc>
+  </programme>
+  <programme start="20260731080000 -0300" stop="20260731100000 -0300" channel="RadarTV">
+    <title lang="pt">Sextou na Radar</title>
+    <desc lang="pt">Dicas de lazer, agenda cultural e entretenimento.</desc>
+  </programme>
+  <programme start="20260731100000 -0300" stop="20260731120000 -0300" channel="RadarTV">
+    <title lang="pt">Magazine Regional</title>
+    <desc lang="pt">Reportagens especiais e matérias de campo.</desc>
+  </programme>
+  <programme start="20260731120000 -0300" stop="20260731140000 -0300" channel="RadarTV">
+    <title lang="pt">Resenha do Esporte</title>
+
+    <desc lang="pt">Projeção dos jogos do final de semana.</desc>
+  </programme>
+  <programme start="20260731140000 -0300" stop="20260731160000 -0300" channel="RadarTV">
+    <title lang="pt">Cine Sexta</title>
+
+    <desc lang="pt">Sessão especial de filmes da tarde.</desc>
+  </programme>
+  <programme start="20260731160000 -0300" stop="20260731180000 -0300" channel="RadarTV">
+    <title lang="pt">Aquecimento Fim de Semana</title>
+    <desc lang="pt">Musicais, convidados e o clima do final de semana.</desc>
+  </programme>
+  <programme start="20260731180000 -0300" stop="20260731200000 -0300" channel="RadarTV">
+    <title lang="pt">Jornal da Cidade - Edição Especial</title>
+    <desc lang="pt">Fechamento das principais notícias da semana.</desc>
+  </programme>
+  <programme start="20260731200000 -0300" stop="20260731220000 -0300" channel="RadarTV">
+    <title lang="pt">Balada Radar</title>
+    <desc lang="pt">Shows ao vivo e clipes dos melhores artistas.</desc>
+  </programme>
+  <programme start="20260731220000 -0300" stop="20260801000000 -0300" channel="RadarTV">
+    <title lang="pt">Sexta Night</title>
+
+    <desc lang="pt">Animação e música na noite de sexta.</desc>
+  </programme>
+
+  <!-- ================= SÁBADO (01/08/2026) ================= -->
+  <programme start="20260801000000 -0300" stop="20260801020000 -0300" channel="RadarTV">
+    <title lang="pt">Baile do Corujão</title>
+    <desc lang="pt">Música para agitar a sua madrugada de sábado.</desc>
+  </programme>
+  <programme start="20260801020000 -0300" stop="20260801040000 -0300" channel="RadarTV">
+    <title lang="pt">Modão de Viola</title>
+    <desc lang="pt">O melhor da música sertaneja tradicional.</desc>
+  </programme>
+  <programme start="20260801040000 -0300" stop="20260801060000 -0300" channel="RadarTV">
+    <title lang="pt">Sábado Rural</title>
+
+    <desc lang="pt">Informativo para os trabalhadores do campo.</desc>
+  </programme>
+  <programme start="20260801060000 -0300" stop="20260801080000 -0300" channel="RadarTV">
+    <title lang="pt">Bom Dia Sábado</title>
+    <desc lang="pt">Música, utilidade pública e astral lá em cima.</desc>
+  </programme>
+  <programme start="20260801080000 -0300" stop="20260801100000 -0300" channel="RadarTV">
+    <title lang="pt">Sábado Animado</title>
+
+    <desc lang="pt">Desenhos, cultura infantil e diversão para a família.</desc>
+  </programme>
+  <programme start="20260801100000 -0300" stop="20260801120000 -0300" channel="RadarTV">
+    <title lang="pt">Sabor &amp; Tradição</title>
+
+    <desc lang="pt">Culinária caipira e receitas de fim de semana.</desc>
+  </programme>
+  <programme start="20260801120000 -0300" stop="20260801140000 -0300" channel="RadarTV">
+    <title lang="pt">Sábado Esportivo</title>
+
+    <desc lang="pt">Acompanhando as rodadas do final de semana.</desc>
+  </programme>
+  <programme start="20260801140000 -0300" stop="20260801160000 -0300" channel="RadarTV">
+    <title lang="pt">Especial Sertanejo</title>
+
+    <desc lang="pt">Grandes apresentações e duplas de destaque.</desc>
+  </programme>
+  <programme start="20260801160000 -0300" stop="20260801180000 -0300" channel="RadarTV">
+    <title lang="pt">Festival de Prêmios</title>
+    <desc lang="pt">Interatividade, prêmios e muita participação.</desc>
+  </programme>
+  <programme start="20260801180000 -0300" stop="20260801200000 -0300" channel="RadarTV">
+    <title lang="pt">Flashback Radar</title>
+
+    <desc lang="pt">Os maiores sucessos dos anos 80, 90 e 2000.</desc>
+  </programme>
+  <programme start="20260801200000 -0300" stop="20260801220000 -0300" channel="RadarTV">
+    <title lang="pt">Sábado de Festa</title>
+    <desc lang="pt">Shows, transmissões ao vivo de eventos da região.</desc>
+  </programme>
+  <programme start="20260801220000 -0300" stop="20260802000000 -0300" channel="RadarTV">
+    <title lang="pt">Balada da Noite</title>
+    <desc lang="pt">Os melhores ritmos para animar a sua noite de sábado.</desc>
+  </programme>
+
+  <!-- ================= DOMINGO (02/08/2026) ================= -->
+  <programme start="20260802000000 -0300" stop="20260802020000 -0300" channel="RadarTV">
+    <title lang="pt">Corujão de Domingo</title>
+    <desc lang="pt">Seleção musical para embalar a sua madrugada de domingo.</desc>
+  </programme>
+  <programme start="20260802020000 -0300" stop="20260802040000 -0300" channel="RadarTV">
+    <title lang="pt">Madrugada Sertaneja</title>
+    <desc lang="pt">O melhor do sertanejo de raiz e modões inesquecíveis.</desc>
+  </programme>
+  <programme start="20260802040000 -0300" stop="20260802060000 -0300" channel="RadarTV">
+    <title lang="pt">Amanhecer Caipira</title>
+    <desc lang="pt">Acompanhando o despertar do homem do campo na região.</desc>
+  </programme>
+  <programme start="20260802060000 -0300" stop="20260802080000 -0300" channel="RadarTV">
+    <title lang="pt">Domingo no Campo</title>
+    <desc lang="pt">Notícias, agropecuária e informações do setor rural.</desc>
+  </programme>
+  <programme start="20260802080000 -0300" stop="20260802100000 -0300" channel="RadarTV">
+    <title lang="pt">Santa Missa &amp; Mensagem</title>
+    <desc lang="pt">Momento de fé, reflexão e oração para a sua manhã.</desc>
+  </programme>
+  <programme start="20260802100000 -0300" stop="20260802120000 -0300" channel="RadarTV">
+    <title lang="pt">Domingo em Família</title>
+    <desc lang="pt">Entretenimento leve, cultura e quadros especiais.</desc>
+  </programme>
+  <programme start="20260802120000 -0300" stop="20260802140000 -0300" channel="RadarTV">
+    <title lang="pt">Churrasco &amp; Viola</title>
+    <desc lang="pt">O almoço de domingo com muita música boa e moda de viola.</desc>
+  </programme>
+  <programme start="20260802140000 -0300" stop="20260802160000 -0300" channel="RadarTV">
+    <title lang="pt">Domingo Muito Show</title>
+    <desc lang="pt">Atrações especiais, reportagens e variedades.</desc>
+  </programme>
+  <programme start="20260802160000 -0300" stop="20260802180000 -0300" channel="RadarTV">
+    <title lang="pt">Futebol Amador Regional</title>
+    <desc lang="pt">Cobertura dos campeonatos e jogos da região.</desc>
+  </programme>
+  <programme start="20260802180000 -0300" stop="20260802200000 -0300" channel="RadarTV">
+    <title lang="pt">Resenha Esportiva de Domingo</title>
+    <desc lang="pt">Análise das rodadas e melhores momentos.</desc>
+  </programme>
+  <programme start="20260802200000 -0300" stop="20260802220000 -0300" channel="RadarTV">
+    <title lang="pt">Domingo de Gala</title>
+    <desc lang="pt">Especial de encerramento do fim de semana com grandes produções.</desc>
+  </programme>
+  <programme start="20260802220000 -0300" stop="20260803000000 -0300" channel="RadarTV">
+    <title lang="pt">Radar Night Domingo</title>
+    <desc lang="pt">Música e tranquilidade para fechar o seu domingo.</desc>
   </programme>
 
 </tv>
