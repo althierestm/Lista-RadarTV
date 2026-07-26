@@ -7,13 +7,19 @@
     <icon src="https://raw.githubusercontent.com/althierestm/radartv/main/Logo%20RadarTV%203000x3000.jpg" />
   </channel>
 
-  <!-- PROGRAMA AO VIVO AGORA -->
-  <programme start="20260726140000 -0300" stop="20260726160000 -0300" channel="RadarTV">
-    <title lang="pt">Althieres ama Juliana</title>
-    <desc lang="pt">Especial da programação demonstrando que o amor está no ar.</desc>
+  <!-- PROGRAMA ANTERIOR -->
+  <programme start="20260726120000 -0300" stop="20260726140000 -0300" channel="RadarTV">
+    <title lang="pt">Todo Mundo odeia o Chris</title>
+    <desc lang="pt">Maratona especial do seriado Todo Mundo Odeia o Chris no Radar TV.</desc>
   </programme>
 
-  <!-- PROGRAMAÇÃO DA NOITE -->
+  <!-- PROGRAMA AO VIVO AGORA (14:00 às 16:00) -->
+  <programme start="20260726140000 -0300" stop="20260726160000 -0300" channel="RadarTV">
+    <title lang="pt">Domingo muito show</title>
+    <desc lang="pt">O melhor do entretenimento, música e atrações especiais para o seu domingo no Radar TV.</desc>
+  </programme>
+
+  <!-- PROGRAMAÇÃO DA NOITE (16:00 às 23:59) -->
   <programme start="20260726160000 -0300" stop="20260726235959 -0300" channel="RadarTV">
     <title lang="pt">Noite de Entretenimento</title>
     <desc lang="pt">Variedades, matérias da região e transmissões ao vivo.</desc>
