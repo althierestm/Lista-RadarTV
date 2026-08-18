@@ -1,16 +1,13 @@
 import os
 
-# Configurações da sua Emissora (Radar TV)
 PLAYLIST_NAME = "Radar TV"
 LOGO_URL = "https://raw.githubusercontent.com/althierestm/radartv/main/Logo%20RadarTV%203000x3000.jpg"
 EPG_URL = "https://raw.githubusercontent.com/althierestm/radartv/main/epg.xml"
 
-# Canal FCV TV (Sinal principal)
 CANAL_PRINCIPAL_FCV = "https://video01.logicahost.com.br/fcvtv/fcvtv/playlist.m3u8"
 
 
 def create_m3u():
-    # Adicionamos todas as variações de tags EPG para funcionar em Smart TVs e SS IPTV
     m3u_content = f'#EXTM3U url-tvg="{EPG_URL}" x-tvg-url="{EPG_URL}"\n'
     m3u_content += f'#EXTINF:-1 tvg-id="RadarTV" tvg-name="{PLAYLIST_NAME}" tvg-logo="{LOGO_URL}" group-title="Radar TV", {PLAYLIST_NAME}\n'
     m3u_content += f'{CANAL_PRINCIPAL_FCV}\n'
