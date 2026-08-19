@@ -16,7 +16,7 @@ CANAL_PRINCIPAL_FCV = "https://video01.logicahost.com.br/fcvtv/fcvtv/playlist.m3
 TIMEZONE = "-0300"  # Horário de Brasília
 
 # ==========================================
-# BANCO DE DADOS DA PROGRAMAÇÃO
+# BANCO DE DADOS DA PROGRAMAÇÃO TÍPICA
 # ==========================================
 PROGRAMAS_BASE = {
     "madrugada": [
@@ -79,7 +79,7 @@ def create_m3u():
     with open("lista.m3u", "w", encoding="utf-8") as f:
         f.write(m3u_content)
     
-    print("✅ Arquivo lista.m3u gerado com suporte total a EPG!")
+    print("✅ Arquivo lista.m3u gerado com sucesso!")
 
 # ==========================================
 # 2. FUNÇÃO PARA GERAR O ARQUIVO EPG (XMLTV)
@@ -87,10 +87,13 @@ def create_m3u():
 def generate_epg():
     tv = ET.Element("tv", attrib={"generator-info-name": "RadarTV_EPG_Generator"})
     
+    # Canal com ID, Nome e Logo
     channel = ET.SubElement(tv, "channel", attrib={"id": CHANNEL_ID})
     display_name = ET.SubElement(channel, "display-name")
     display_name.text = PLAYLIST_NAME
+    ET.SubElement(channel, "icon", attrib={"src": LOGO_URL})
 
+    # Grade a partir da hora atual até 31/12/2026
     start_date = datetime.datetime.now().replace(minute=0, second=0, microsecond=0)
     end_date = datetime.datetime(2026, 12, 31, 23, 59, 59)
     
@@ -102,7 +105,7 @@ def generate_epg():
         current_month = current_time.month
         current_year = current_time.year
 
-        # Copa Baldanza: Dia 05 de Setembro (08:00 às 20:00)
+        # Copa Baldanza: Sábado 05/09/2026 (08:00 às 20:00)
         if current_year == 2026 and current_month == 9 and current_day == 5 and current_time.hour == 8 and current_time.minute == 0:
             prog_start = current_time
             prog_end = current_time.replace(hour=20, minute=0)
@@ -119,7 +122,7 @@ def generate_epg():
             current_time = prog_end
             continue
 
-        # Copa Baldanza: Dia 06 de Setembro (09:00 às 15:00)
+        # Copa Baldanza: Domingo 06/09/2026 (09:00 às 15:00)
         elif current_year == 2026 and current_month == 9 and current_day == 6 and current_time.hour == 9 and current_time.minute == 0:
             prog_start = current_time
             prog_end = current_time.replace(hour=15, minute=0)
@@ -136,11 +139,12 @@ def generate_epg():
             current_time = prog_end
             continue
 
-        # Programação Típica de TV
+        # Programação Normal Diária
         title, desc, duration_min = get_random_show(current_time.hour)
         prog_start = current_time
         prog_end = prog_start + datetime.timedelta(minutes=duration_min)
 
+        # Ajuste de borda para não sobrepor o início da Copa Baldanza
         if current_year == 2026 and current_month == 9:
             if current_day == 5 and prog_start.hour < 8 and prog_end.hour >= 8:
                 prog_end = prog_start.replace(hour=8, minute=0)
@@ -160,6 +164,7 @@ def generate_epg():
 
         current_time = prog_end
 
+    # Formatação e escrita dos arquivos
     xml_str = minidom.parseString(ET.tostring(tv, encoding="utf-8")).toprettyxml(indent="  ", encoding="utf-8")
     
     with open("epg.xml", "wb") as f:
@@ -175,12 +180,4 @@ def generate_epg():
 # ==========================================
 if __name__ == "__main__":
     create_m3u()
-    def generate_epg():
-    tv = ET.Element("tv", attrib={"generator-info-name": "RadarTV_EPG_Generator"})
-    
-    # Canal com nome e Logo inclusos
-    channel = ET.SubElement(tv, "channel", attrib={"id": CHANNEL_ID})
-    display_name = ET.SubElement(channel, "display-name")
-    display_name.text = PLAYLIST_NAME
-    
-    icon = ET.SubElement(channel, "icon", attrib={"src": LOGO_URL})  # <- Adiciona o ícone direto no EPG
+    generate_epg()
