@@ -175,4 +175,12 @@ def generate_epg():
 # ==========================================
 if __name__ == "__main__":
     create_m3u()
-    generate_epg()
+    def generate_epg():
+    tv = ET.Element("tv", attrib={"generator-info-name": "RadarTV_EPG_Generator"})
+    
+    # Canal com nome e Logo inclusos
+    channel = ET.SubElement(tv, "channel", attrib={"id": CHANNEL_ID})
+    display_name = ET.SubElement(channel, "display-name")
+    display_name.text = PLAYLIST_NAME
+    
+    icon = ET.SubElement(channel, "icon", attrib={"src": LOGO_URL})  # <- Adiciona o ícone direto no EPG
