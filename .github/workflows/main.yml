@@ -1,34 +1,33 @@
 name: Atualizador de Lista IPTV
 
 on:
-  workflow_dispatch:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '0 3 * * *' # Executa diariamente às 00:00 (Brasília)
+  workflow_dispatch:     # Permite rodar manualmente pelo botão
+
+permissions:
+  contents: write       # Garante permissão de escrita para salvar os arquivos
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Baixar código do repositório
-      uses: actions/checkout@v3
+      - name: Checkout do repositório
+        uses: actions/checkout@v4
 
-    - name: Configurar Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.x'
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
 
-    - name: Instalar dependências
-      run: |
-        python -m pip install --upgrade pip
-        pip install yt-dlp
+      - name: Executar script gerador
+        run: python atualizar_lista.py
 
-    - name: Executar script de atualização
-      run: python atualizar_lista.py
-
-    - name: Salvar alterações no GitHub
-      run: |
-        git config --global user.name "GitHub Action"
-        git config --global user.email "action@github.com"
-        git add lista.m3u
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Lista IPTV atualizada" && git push)
+      - name: Commit e Push das alterações
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add lista.m3u epg.xml epg.xml.gz
+          git commit -m "Auto: lista e EPG atualizados com sucesso" || echo "Nenhuma alteração detectada"
+          git push
