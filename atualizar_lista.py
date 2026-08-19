@@ -9,7 +9,7 @@ from xml.dom import minidom
 # CONFIGURAÇÕES GERAIS E DA LISTA M3U
 # ==========================================
 PLAYLIST_NAME = "Radar TV"
-CHANNEL_ID = "RadarTV"  # ID idêntico para linkar M3U ao EPG
+CHANNEL_ID = "RadarTV"
 LOGO_URL = "https://raw.githubusercontent.com/althierestm/Lista-RadarTV/main/Logo%20RadarTV%203000x3000.png"
 EPG_URL = "https://althierestm.github.io/Lista-RadarTV/epg.xml"
 CANAL_PRINCIPAL_FCV = "https://video01.logicahost.com.br/fcvtv/fcvtv/playlist.m3u8"
@@ -68,9 +68,6 @@ def get_random_show(hour):
     duration = random.choice(durations)
     return title, desc, duration
 
-# ==========================================
-# 1. FUNÇÃO PARA GERAR O ARQUIVO M3U
-# ==========================================
 def create_m3u():
     m3u_content = f'#EXTM3U url-tvg="{EPG_URL}" x-tvg-url="{EPG_URL}"\n'
     m3u_content += f'#EXTINF:-1 tvg-id="{CHANNEL_ID}" tvg-name="{PLAYLIST_NAME}" tvg-logo="{LOGO_URL}" group-title="Radar TV", {PLAYLIST_NAME}\n'
@@ -81,20 +78,19 @@ def create_m3u():
     
     print("✅ Arquivo lista.m3u gerado com sucesso!")
 
-# ==========================================
-# 2. FUNÇÃO PARA GERAR O ARQUIVO EPG (XMLTV)
-# ==========================================
 def generate_epg():
     tv = ET.Element("tv", attrib={"generator-info-name": "RadarTV_EPG_Generator"})
     
-    # Canal com ID, Nome e Logo
     channel = ET.SubElement(tv, "channel", attrib={"id": CHANNEL_ID})
     display_name = ET.SubElement(channel, "display-name")
     display_name.text = PLAYLIST_NAME
     ET.SubElement(channel, "icon", attrib={"src": LOGO_URL})
 
-    # Grade a partir da hora atual até 31/12/2026
-    start_date = datetime.datetime.now().replace(minute=0, second=0, microsecond=0)
+    # Converte UTC do servidor para Horário de Brasília (-3h)
+    agora_brasil = datetime.datetime.utcnow() - datetime.timedelta(hours=3)
+    
+    # Inicia a grade desde 00:00 de ONTEM para garantir histórico e o dia de HOJE completo
+    start_date = (agora_brasil - datetime.timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0)
     end_date = datetime.datetime(2026, 12, 31, 23, 59, 59)
     
     current_time = start_date
@@ -139,12 +135,11 @@ def generate_epg():
             current_time = prog_end
             continue
 
-        # Programação Normal Diária
+        # Programação Normal
         title, desc, duration_min = get_random_show(current_time.hour)
         prog_start = current_time
         prog_end = prog_start + datetime.timedelta(minutes=duration_min)
 
-        # Ajuste de borda para não sobrepor o início da Copa Baldanza
         if current_year == 2026 and current_month == 9:
             if current_day == 5 and prog_start.hour < 8 and prog_end.hour >= 8:
                 prog_end = prog_start.replace(hour=8, minute=0)
@@ -164,7 +159,6 @@ def generate_epg():
 
         current_time = prog_end
 
-    # Formatação e escrita dos arquivos
     xml_str = minidom.parseString(ET.tostring(tv, encoding="utf-8")).toprettyxml(indent="  ", encoding="utf-8")
     
     with open("epg.xml", "wb") as f:
@@ -175,9 +169,6 @@ def generate_epg():
 
     print("✅ Arquivos epg.xml e epg.xml.gz gerados com sucesso!")
 
-# ==========================================
-# EXECUÇÃO PRINCIPAL
-# ==========================================
 if __name__ == "__main__":
     create_m3u()
     generate_epg()
