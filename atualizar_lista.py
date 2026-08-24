@@ -12,7 +12,7 @@ PLAYLIST_NAME = "Radar TV"
 CHANNEL_ID = "RadarTV"
 LOGO_URL = "https://raw.githubusercontent.com/althierestm/Lista-RadarTV/main/Logo%20RadarTV%203000x3000.png"
 EPG_URL = "https://althierestm.github.io/Lista-RadarTV/epg.xml"
-CANAL_PRINCIPAL_FCV = "https://video01.logicahost.com.br/fcvtv/fcvtv/playlist.m3u8"
+CANAL_PRINCIPAL_FCV = "https://jmp2.uk/plu-5f12101f0b12f00007844c7c.m3u8"
 TIMEZONE = "-0300"  # Horário de Brasília
 
 # ==========================================
