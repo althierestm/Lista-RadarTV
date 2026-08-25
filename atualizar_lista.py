@@ -10,7 +10,7 @@ from xml.dom import minidom
 # ==========================================
 PLAYLIST_NAME = "Radar TV"
 CHANNEL_ID = "RadarTV"
-LOGO_URL = "https://raw.githubusercontent.com/althierestm/Lista-RadarTV/main/Logo%20RadarTV%203000x3000.png"
+LOGO_URL = "https://raw.githubusercontent.com/althierestm/Radartvplayer/refs/heads/main/logo%20png%20RadarTV.png"
 EPG_URL = "https://althierestm.github.io/Lista-RadarTV/epg.xml"
 CANAL_PRINCIPAL_RADARTV = "https://cdn-tiva-video04-logicahost-com-br.smartplay.pe/isonata/isonata/playlist.m3u8"
 TIMEZONE = "-0300"  # Horário de Brasília
