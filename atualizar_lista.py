@@ -12,7 +12,7 @@ PLAYLIST_NAME = "Radar TV"
 CHANNEL_ID = "RadarTV"
 LOGO_URL = "https://raw.githubusercontent.com/althierestm/Lista-RadarTV/main/Logo%20RadarTV%203000x3000.png"
 EPG_URL = "https://althierestm.github.io/Lista-RadarTV/epg.xml"
-CANAL_PRINCIPAL_FCV = "https://jmp2.uk/plu-5f12101f0b12f00007844c7c.m3u8"
+CANAL_PRINCIPAL_RADARTV = "https://jmp2.uk/plu-5f12101f0b12f00007844c7c.m3u8"
 TIMEZONE = "-0300"  # Horário de Brasília
 
 # ==========================================
@@ -71,7 +71,7 @@ def get_random_show(hour):
 def create_m3u():
     m3u_content = f'#EXTM3U url-tvg="{EPG_URL}" x-tvg-url="{EPG_URL}"\n'
     m3u_content += f'#EXTINF:-1 tvg-id="{CHANNEL_ID}" tvg-name="{PLAYLIST_NAME}" tvg-logo="{LOGO_URL}" group-title="Radar TV", {PLAYLIST_NAME}\n'
-    m3u_content += f'{CANAL_PRINCIPAL_FCV}\n'
+    m3u_content += f'{CANAL_PRINCIPAL_RADARTV}\n'
 
     with open("lista.m3u", "w", encoding="utf-8") as f:
         f.write(m3u_content)
@@ -86,10 +86,8 @@ def generate_epg():
     display_name.text = PLAYLIST_NAME
     ET.SubElement(channel, "icon", attrib={"src": LOGO_URL})
 
-    # Converte UTC do servidor para Horário de Brasília (-3h)
     agora_brasil = datetime.datetime.utcnow() - datetime.timedelta(hours=3)
     
-    # Inicia a grade desde 00:00 de ONTEM para garantir histórico e o dia de HOJE completo
     start_date = (agora_brasil - datetime.timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0)
     end_date = datetime.datetime(2026, 12, 31, 23, 59, 59)
     
