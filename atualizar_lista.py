@@ -12,7 +12,7 @@ PLAYLIST_NAME = "Radar TV"
 CHANNEL_ID = "RadarTV"
 LOGO_URL = "https://raw.githubusercontent.com/althierestm/Radartvplayer/refs/heads/main/logo%20png%20RadarTV.png"
 EPG_URL = "https://althierestm.github.io/Lista-RadarTV/epg.xml"
-CANAL_PRINCIPAL_RADARTV = "https://cdn-tiva-video04-logicahost-com-br.smartplay.pe/isonata/isonata/playlist.m3u8"
+CANAL_PRINCIPAL_RADARTV = "https://manifest.googlevideo.com/api/manifest/hls_variant/expire/1787706017/ei/QeaNatz8LrDap-oP2rvmgAU/ip/185.27.134.186/id/dyF_6wHjaBw.1/source/yt_live_broadcast/requiressl/yes/xpc/EgVo2aDSNQ%3D%3D/hfr/1/playlist_duration/30/manifest_duration/30/maudio/1/bui/AR3QkAlC_2DquWZMtmgOgSKPhMxrdL1liAI2BcSspOIQTg4ZRw-3Ymq7qZFYz6W-QWEb18pZsGNfQ-Dw/spc/KBGBcptaummy46DQOjAC4WbXdvp9z4iBhvLBsSsim43d76U5cbVD9iiM-QGyPI9ldsQ2tXzU/vprv/1/go/1/ns/hMJIwTdE1kLfJbpDNVyQXboX/rqh/5/reg/0/pacing/0/nvgoi/1/ncsapi/1/keepalive/yes/fexp/51565116%2C52135440/dover/11/n/ZIKN_YguXnz9RbmtcY/itag/0/playlist_type/DVR/sparams/expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Chfr%2Cplaylist_duration%2Cmanifest_duration%2Cmaudio%2Cbui%2Cspc%2Cvprv%2Cgo%2Cns%2Crqh%2Creg%2Citag%2Cplaylist_type/sig/AE0s2JYwRQIgBA-tpwD4O_-UcN78cVoBE2ss-0MRBdX79E30q6ApoBwCIQD5uGSEM5hIm7wd42aC5MdrPGUHFT77nJ1LzUl9UCu0Jw%3D%3D/file/index.m3u8"
 TIMEZONE = "-0300"  # Horário de Brasília
 
 # ==========================================
