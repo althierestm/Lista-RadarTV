@@ -1,3 +1,3 @@
 #EXTM3U url-tvg="https://althierestm.github.io/Lista-RadarTV/epg.xml" x-tvg-url="https://althierestm.github.io/Lista-RadarTV/epg.xml"
 #EXTINF:-1 tvg-id="RadarTV" tvg-name="Radar TV" tvg-logo="https://raw.githubusercontent.com/althierestm/Radartvplayer/refs/heads/main/logo%20png%20RadarTV.png" group-title="Radar TV", Radar TV
-https://cdn-tiva-video04-logicahost-com-br.smartplay.pe/isonata/isonata/playlist.m3u8 
+https://video01.logicahost.com.br/fcvtv/fcvtv/playlist.m3u8
